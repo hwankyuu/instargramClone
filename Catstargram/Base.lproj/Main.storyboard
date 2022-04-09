@@ -330,20 +330,73 @@
             </objects>
             <point key="canvasLocation" x="1782.608695652174" y="116.51785714285714"/>
         </scene>
-        <!--Test View Controller-->
-        <scene sceneID="MdI-Nh-Ymk">
+        <!--Proflie-->
+        <scene sceneID="ZPS-Pj-14o">
             <objects>
-                <viewController storyboardIdentifier="TestVC" id="Non-zh-Bc8" customClass="TestViewController" customModule="Catstargram" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ryz-Hb-XCm">
+                <viewController id="tt3-jC-Nw4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xZC-ZU-a0G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="tAZ-zn-g3m"/>
-                        <color key="backgroundColor" systemColor="systemBrownColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Proflie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uiq-u1-1rR">
+                                <rect key="frame" x="172" y="433" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S1h-EE-jUb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Proflie" id="07p-Km-8gc"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TZE-Cy-Shj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UcN-YD-UVc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1042" y="796"/>
+            <point key="canvasLocation" x="1783" y="1643"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="eHR-th-Fae">
+            <objects>
+                <viewController id="jNv-FZ-plh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gVf-Dz-uuX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGe-rN-mvV">
+                                <rect key="frame" x="172" y="433" width="70" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9We-YH-J5t"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" id="ajp-MZ-grw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YFD-Mc-Rl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="1643"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ZW5-3b-DP4">
+            <objects>
+                <tabBarController storyboardIdentifier="TabBarVC" id="Wqr-ZK-Hny" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VBv-as-hwK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jNv-FZ-plh" kind="relationship" relationship="viewControllers" id="nXr-BQ-DEw"/>
+                        <segue destination="tt3-jC-Nw4" kind="relationship" relationship="viewControllers" id="0VA-eG-97j"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vzd-kC-vtL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="916"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Xg7-J6-EEv">
@@ -379,9 +432,6 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

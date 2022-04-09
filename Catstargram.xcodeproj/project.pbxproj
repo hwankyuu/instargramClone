@@ -10,7 +10,6 @@
 		CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */; };
 		CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A327FA353500EC8EFD /* RegisterViewController.swift */; };
 		CA514A40280120E600E902F7 /* keyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA514A3F280120E600E902F7 /* keyboardController.swift */; };
-		CA514A42280125C600E902F7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA514A41280125C600E902F7 /* TestViewController.swift */; };
 		CA62EDF927F663D40068BC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDF827F663D40068BC77 /* AppDelegate.swift */; };
 		CA62EDFB27F663D40068BC77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDFA27F663D40068BC77 /* SceneDelegate.swift */; };
 		CA62EDFD27F663D40068BC77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDFC27F663D40068BC77 /* ViewController.swift */; };
@@ -27,7 +26,6 @@
 		CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA4312A327FA353500EC8EFD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CA514A3F280120E600E902F7 /* keyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardController.swift; sourceTree = "<group>"; };
-		CA514A41280125C600E902F7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		CA62EDF527F663D40068BC77 /* Catstargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA62EDF827F663D40068BC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA62EDFA27F663D40068BC77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 				CA62EDFA27F663D40068BC77 /* SceneDelegate.swift */,
 				CA62EDFC27F663D40068BC77 /* ViewController.swift */,
 				CA62EDFE27F663D40068BC77 /* Main.storyboard */,
-				CA514A41280125C600E902F7 /* TestViewController.swift */,
 				CA514A3F280120E600E902F7 /* keyboardController.swift */,
 				CA4312A327FA353500EC8EFD /* RegisterViewController.swift */,
 				CA7FC72628003FC700F158E5 /* UIView+Extension.swift */,
@@ -164,7 +161,6 @@
 			files = (
 				CA514A40280120E600E902F7 /* keyboardController.swift in Sources */,
 				CA7FC72728003FC700F158E5 /* UIView+Extension.swift in Sources */,
-				CA514A42280125C600E902F7 /* TestViewController.swift in Sources */,
 				CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */,
 				CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */,
 				CA62EDFD27F663D40068BC77 /* ViewController.swift in Sources */,
