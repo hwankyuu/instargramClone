@@ -28,11 +28,17 @@ class LoginViewController: UIViewController {
         // 옵셔널 = ?
         // 값이 있을수도 없을수도
         let text = sender.text ?? ""
+        
+        self.loginButton.backgroundColor = text.isValidEmail() ? .facebookColor : .disabledButtonColor
+     
         self.email = text
 
     }
     @IBAction func passwordTextFledEditingChange(_ sender: UITextField) {
         let text = sender.text ?? ""
+        
+        self.loginButton.backgroundColor = text.count > 2 ? .facebookColor : .disabledButtonColor
+        
         self.password = text
     }
     
@@ -42,12 +48,13 @@ class LoginViewController: UIViewController {
         guard let userInfo = self.userInfo else  { return }
         if userInfo.email == self.email
                 && userInfo.password == self.password {
-            self.loginButton.backgroundColor = .facebookColor
-            self.loginButton.isEnabled = true
-            print("다음화면으로 이동")
+           let vc =
+            storyboard?
+                .instantiateViewController(withIdentifier: "TestVC") as! TestViewController
+            self.present(vc, animated: true,completion: nil)
+            
         } else {
-            self.loginButton.backgroundColor = .disabledButtonColor
-            self.loginButton.isEnabled = false
+     
         }
     }
     
