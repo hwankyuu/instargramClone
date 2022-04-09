@@ -13,7 +13,6 @@ class RegisterViewController: UIViewController {
     var name: String = ""
     var nickname: String = ""
     var password: String = ""
-    
     var userInfo: ((UserInfo) -> Void)?
     
     // 유효성검사를 위한 프로퍼티
@@ -72,7 +71,7 @@ class RegisterViewController: UIViewController {
         //bug fix
         self.navigationController?
             .interactivePopGestureRecognizer?.delegate = nil
-       
+      
     }
     
     // MARK: - Actions
@@ -110,13 +109,9 @@ class RegisterViewController: UIViewController {
     @IBAction func registerButtonDidtap(_ sender: UIButton) {
         // 뒤로가기
         self.navigationController?.popViewController(animated: true)
+        let userInfo = UserInfo(email: self.email, name: self.name, nickname: self.nickname, password: self.password)
         
-        let userInfo = UserInfo(email: self.email,
-                                name: self.name,
-                                nickname: self.nickname,
-                                password: self.password)
-        
-        self.userInfo? (userInfo)
+        self.userInfo?(userInfo)
     }
     
     

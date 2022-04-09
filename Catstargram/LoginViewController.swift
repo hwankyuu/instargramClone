@@ -20,6 +20,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAttribute()
+       
     }
     
     @IBAction func emailTextFledEditingChange(_ sender: UITextField) {
