@@ -15,9 +15,9 @@ class StoryCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        viewimageViewBackgroud.layer.cornerRadius = 24
-        viewUserProfileBackground.layer.cornerRadius = 23.5
-        imageVIewUserProfile.layer.cornerRadius = 22.5
+        viewimageViewBackgroud.layer.cornerRadius = 48 / 2
+        viewUserProfileBackground.layer.cornerRadius = 47 / 2
+        imageVIewUserProfile.layer.cornerRadius = 45 / 2
         imageVIewUserProfile.clipsToBounds = true
         // Initialization code
     }
