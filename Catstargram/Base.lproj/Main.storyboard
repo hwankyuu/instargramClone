@@ -414,6 +414,9 @@
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Button" image="ic_home_upload"/>
+                                        <connections>
+                                            <action selector="buttonGoAlbum:" destination="jNv-FZ-plh" eventType="touchUpInside" id="gRD-wA-riP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u1L-9k-LzQ">
                                         <rect key="frame" x="332" y="11.5" width="27" height="27"/>
@@ -464,7 +467,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFD-Mc-Rl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="283" y="1643"/>
+            <point key="canvasLocation" x="282.60869565217394" y="1642.6339285714284"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZW5-3b-DP4">

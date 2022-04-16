@@ -34,6 +34,9 @@
 		CA7FC72928004D2300F158E5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FC72828004D2300F158E5 /* UIViewController+Extension.swift */; };
 		CA7FC72B280053E300F158E5 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FC72A280053E200F158E5 /* Color+Extension.swift */; };
 		CA7FC72D28005EB200F158E5 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7FC72C28005EB200F158E5 /* UserInfo.swift */; };
+		CA9E43F3280B272800A722A9 /* FeedUploadInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E43F2280B272800A722A9 /* FeedUploadInput.swift */; };
+		CA9E43F5280B2D0C00A722A9 /* FeedUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E43F4280B2D0B00A722A9 /* FeedUploadModel.swift */; };
+		CA9E43F7280B2DAD00A722A9 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E43F6280B2DAD00A722A9 /* FeedUploadDataManager.swift */; };
 		CAB6A5A728099904004F6C9D /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */; };
 		CAB6A5A828099904004F6C9D /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -70,6 +73,9 @@
 		CA7FC72828004D2300F158E5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		CA7FC72A280053E200F158E5 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		CA7FC72C28005EB200F158E5 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		CA9E43F2280B272800A722A9 /* FeedUploadInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadInput.swift; sourceTree = "<group>"; };
+		CA9E43F4280B2D0B00A722A9 /* FeedUploadModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadModel.swift; sourceTree = "<group>"; };
+		CA9E43F6280B2DAD00A722A9 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -134,6 +140,7 @@
 		CA5D3B4A2807F02700576926 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CA9E43F1280B26EA00A722A9 /* FeedUploadDataManager */,
 				CA493521280AA734007C9825 /* FeedDataManager */,
 				CA5D3B4E2807F72200576926 /* Cell */,
 				CA5D3B4B2807F03900576926 /* HomeViewController.swift */,
@@ -193,6 +200,16 @@
 				CA7FC72C28005EB200F158E5 /* UserInfo.swift */,
 			);
 			path = Catstargram;
+			sourceTree = "<group>";
+		};
+		CA9E43F1280B26EA00A722A9 /* FeedUploadDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA9E43F2280B272800A722A9 /* FeedUploadInput.swift */,
+				CA9E43F4280B2D0B00A722A9 /* FeedUploadModel.swift */,
+				CA9E43F6280B2DAD00A722A9 /* FeedUploadDataManager.swift */,
+			);
+			path = FeedUploadDataManager;
 			sourceTree = "<group>";
 		};
 		CAB6A5A4280998CF004F6C9D /* Cell */ = {
@@ -338,6 +355,7 @@
 				CA5D3B512807F78900576926 /* FeedTableViewCell.swift in Sources */,
 				CAB6A5A728099904004F6C9D /* ProfileCollectionViewCell.swift in Sources */,
 				CA7FC72728003FC700F158E5 /* UIView+Extension.swift in Sources */,
+				CA9E43F7280B2DAD00A722A9 /* FeedUploadDataManager.swift in Sources */,
 				CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */,
 				CA493523280AA758007C9825 /* FeedAPIinput.swift in Sources */,
 				CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */,
@@ -347,9 +365,11 @@
 				CA5D3B4C2807F03900576926 /* HomeViewController.swift in Sources */,
 				CA5D3B552809550300576926 /* StoryTableViewCell.swift in Sources */,
 				CA493527280AA7FC007C9825 /* FeedDataManager.swift in Sources */,
+				CA9E43F5280B2D0C00A722A9 /* FeedUploadModel.swift in Sources */,
 				CA62EDFB27F663D40068BC77 /* SceneDelegate.swift in Sources */,
 				CA33F508280A81EF00D04BB8 /* PostCollectionViewCell.swift in Sources */,
 				CA7FC72D28005EB200F158E5 /* UserInfo.swift in Sources */,
+				CA9E43F3280B272800A722A9 /* FeedUploadInput.swift in Sources */,
 				CA1D99D02809895D00519A5F /* ProfileViewController.swift in Sources */,
 				CA5D3B592809612A00576926 /* StoryCollectionViewCell.swift in Sources */,
 				CA7FC72B280053E300F158E5 /* Color+Extension.swift in Sources */,

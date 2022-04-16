@@ -14,6 +14,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var arrayCat : [FeedModel] = []
     
+    let imagePickerViewController = UIImagePickerController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -27,8 +29,18 @@ class HomeViewController: UIViewController {
         
         let input = FeedAPIinput(limit: 30, page: 10) //페이징 처리
         FeedDataManager().feedDataManager(input, self)
+        
+        imagePickerViewController.delegate = self
+        
     }
 
+    //swift 사진 앨범 연동하기 구글링
+    // 파이어베이스 안에있는 스토리지에 사진을 저장한다
+    
+    @IBAction func buttonGoAlbum(_ sender: Any) {
+        self.imagePickerViewController.sourceType = .photoLibrary
+        self.present(imagePickerViewController, animated: true, completion: nil)
+    }
 }
 
 extension HomeViewController : UITableViewDelegate, UITableViewDataSource {
@@ -92,5 +104,17 @@ extension HomeViewController {
     func sucessAPI(_ result: [FeedModel]) {
         arrayCat = result
         tableView.reloadData()
+    }
+}
+
+extension HomeViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            let imageString = "gs://catstargram-d7fbf.appspot.com/Cat1"
+            let input = FeeduploadInput(Content: "저희 냥이입니다. 귀엽지 않나요?", postImage: [imageString])
+            FeedUploadDataManager().posts(self, input)
+            
+            self.dismiss(animated: true, completion: nil)
+        }
     }
 }
