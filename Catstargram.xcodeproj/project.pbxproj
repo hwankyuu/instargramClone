@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE7B0C53FCE4C01C721D85FE /* Pods_Catstargram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 534DFCE80773787134BC2DF9 /* Pods_Catstargram.framework */; };
 		CA1D99D02809895D00519A5F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D99CF2809895D00519A5F /* ProfileViewController.swift */; };
+		CA33F508280A81EF00D04BB8 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33F506280A81EF00D04BB8 /* PostCollectionViewCell.swift */; };
+		CA33F509280A81EF00D04BB8 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */; };
 		CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */; };
 		CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A327FA353500EC8EFD /* RegisterViewController.swift */; };
 		CA514A40280120E600E902F7 /* keyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA514A3F280120E600E902F7 /* keyboardController.swift */; };
@@ -33,7 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		534DFCE80773787134BC2DF9 /* Pods_Catstargram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catstargram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CC4FD27C40466E27E95B26A /* Pods-Catstargram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstargram.release.xcconfig"; path = "Target Support Files/Pods-Catstargram/Pods-Catstargram.release.xcconfig"; sourceTree = "<group>"; };
+		6953BE20D9D7A2CBD189FE34 /* Pods-Catstargram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catstargram.debug.xcconfig"; path = "Target Support Files/Pods-Catstargram/Pods-Catstargram.debug.xcconfig"; sourceTree = "<group>"; };
 		CA1D99CF2809895D00519A5F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CA33F506280A81EF00D04BB8 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
+		CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA4312A327FA353500EC8EFD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CA514A3F280120E600E902F7 /* keyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardController.swift; sourceTree = "<group>"; };
@@ -65,12 +73,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7B0C53FCE4C01C721D85FE /* Pods_Catstargram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		491D0D0D2CC47E851F39F0C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				534DFCE80773787134BC2DF9 /* Pods_Catstargram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CA1D99CE2809894200519A5F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +95,24 @@
 				CA1D99CF2809895D00519A5F /* ProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		CA33F504280A81BC00D04BB8 /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */,
+				CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		CA33F505280A81D800D04BB8 /* PostCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA33F506280A81EF00D04BB8 /* PostCollectionViewCell.swift */,
+				CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */,
+			);
+			path = PostCell;
 			sourceTree = "<group>";
 		};
 		CA5D3B4A2807F02700576926 /* Home */ = {
@@ -107,6 +142,8 @@
 			children = (
 				CA62EDF727F663D40068BC77 /* Catstargram */,
 				CA62EDF627F663D40068BC77 /* Products */,
+				CB95818D4376677941BE14FC /* Pods */,
+				491D0D0D2CC47E851F39F0C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,10 +181,20 @@
 		CAB6A5A4280998CF004F6C9D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */,
-				CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */,
+				CA33F505280A81D800D04BB8 /* PostCell */,
+				CA33F504280A81BC00D04BB8 /* ProfileCell */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CB95818D4376677941BE14FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6953BE20D9D7A2CBD189FE34 /* Pods-Catstargram.debug.xcconfig */,
+				5CC4FD27C40466E27E95B26A /* Pods-Catstargram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +204,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA62EE0927F663D50068BC77 /* Build configuration list for PBXNativeTarget "Catstargram" */;
 			buildPhases = (
+				F17B69F23C3FAADD8F62AAEF /* [CP] Check Pods Manifest.lock */,
 				CA62EDF127F663D40068BC77 /* Sources */,
 				CA62EDF227F663D40068BC77 /* Frameworks */,
 				CA62EDF327F663D40068BC77 /* Resources */,
+				2167569B5A452B78CBC98FC6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -208,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA33F509280A81EF00D04BB8 /* PostCollectionViewCell.xib in Resources */,
 				CA62EE0527F663D50068BC77 /* LaunchScreen.storyboard in Resources */,
 				CA5D3B522807F78900576926 /* FeedTableViewCell.xib in Resources */,
 				CA62EE0227F663D50068BC77 /* Assets.xcassets in Resources */,
@@ -219,6 +269,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2167569B5A452B78CBC98FC6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catstargram/Pods-Catstargram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Catstargram/Pods-Catstargram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Catstargram/Pods-Catstargram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F17B69F23C3FAADD8F62AAEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Catstargram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA62EDF127F663D40068BC77 /* Sources */ = {
@@ -237,6 +329,7 @@
 				CA5D3B4C2807F03900576926 /* HomeViewController.swift in Sources */,
 				CA5D3B552809550300576926 /* StoryTableViewCell.swift in Sources */,
 				CA62EDFB27F663D40068BC77 /* SceneDelegate.swift in Sources */,
+				CA33F508280A81EF00D04BB8 /* PostCollectionViewCell.swift in Sources */,
 				CA7FC72D28005EB200F158E5 /* UserInfo.swift in Sources */,
 				CA1D99D02809895D00519A5F /* ProfileViewController.swift in Sources */,
 				CA5D3B592809612A00576926 /* StoryCollectionViewCell.swift in Sources */,
@@ -382,6 +475,7 @@
 		};
 		CA62EE0A27F663D50068BC77 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6953BE20D9D7A2CBD189FE34 /* Pods-Catstargram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -411,6 +505,7 @@
 		};
 		CA62EE0B27F663D50068BC77 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CC4FD27C40466E27E95B26A /* Pods-Catstargram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

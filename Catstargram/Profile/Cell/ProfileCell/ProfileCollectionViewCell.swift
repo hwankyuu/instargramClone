@@ -39,6 +39,9 @@ static let identifier = "ProfileCollectionViewCell"
         profileImageView.layer.cornerRadius = 88 / 2
         addProfileImageView.layer.cornerRadius = 24 / 2
         
+        profileImageView.layer.borderColor = UIColor.darkGray.cgColor
+        profileImageView.layer.borderWidth = 1
+        
         editButton.layer.cornerRadius = 5
         editButton.layer.borderColor = UIColor.lightGray.cgColor  //cgColor 는 uikit 내부 경계선 ;; 코어그래픽이라는 로우레벨에 라이브러리가 이미 있음 그것을 통해서 보더칼라를 주는 코드라고 생각하면 됨
         editButton.layer.borderWidth = 1

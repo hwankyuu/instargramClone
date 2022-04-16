@@ -9,7 +9,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
-// MARK: - Properties
+    // MARK: - Properties
     @IBOutlet weak var profileCollectionView: UICollectionView!
     
     
@@ -33,32 +33,103 @@ class ProfileViewController: UIViewController {
         profileCollectionView.dataSource = self
         
         // cell 등록
-        profileCollectionView.register(UINib(nibName: "ProfileCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ProfileCollectionViewCell.identifier)
+        profileCollectionView.register(
+            UINib(nibName: "ProfileCollectionViewCell",
+                  bundle: nil),
+            forCellWithReuseIdentifier: ProfileCollectionViewCell.identifier)
+        
+        
+        
+        profileCollectionView.register(
+            UINib(nibName: "PostCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: PostCollectionViewCell.identifier)
     }
 }
 
 
-// MARK: UICollectionViewDelegate, UICollectionViewDataSource
+// MARK: - UICollectionViewDelegate, UICollectionViewDataSource
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        1
+    // 섹션의 갯수
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 2
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ProfileCollectionViewCell.identifier, for: indexPath) as? ProfileCollectionViewCell else{
-//            return UICollectionView()
+    
+    // Cell의 갯수
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        switch section {
+        case 0:
+            return 1
+        default:  // 1번째 섹션
+            return 24
+        }
+    }
+    
+    
+    // Cell 생성
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let section = indexPath.section
+        switch section {
+        case 0: // Profile
+            guard  let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: ProfileCollectionViewCell.identifier,
+                for: indexPath) as? ProfileCollectionViewCell else{
+            // return UICollectionView()
             fatalError(" 셀 타입 캐스팅 실패...")
         }
-        return cell
+            return cell
+        default: // Post
+            guard  let cell = collectionView.dequeueReusableCell(
+                withReuseIdentifier: PostCollectionViewCell.identifier,
+                for: indexPath) as? PostCollectionViewCell else {
+                  fatalError(" 셀 타입 캐스팅 실패...")
+              }
+//            cell.setupData() // <-- 데이터 전달
+              return cell
+        }
     }
 }
 
 extension ProfileViewController: UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView,
                         layout collectionViewLayout: UICollectionViewLayout,
                         sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width,
-                    height: CGFloat(159))
+        let section = indexPath.section
+        switch section {
+        case 0:  // Profile
+            return CGSize(width: collectionView.frame.width,
+                          height: CGFloat(159))
+        default:  // Post
+            let side = CGFloat((collectionView.frame.width / 3) - (4/3))
+            return CGSize(width: side,
+                          height: side)
+            
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        switch section {
+        case 0:
+            return CGFloat(0)
+        default:
+            return CGFloat(1)
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        switch section {
+        case 0:
+            return CGFloat(0)
+        default:
+            return CGFloat(1)
+        }
     }
 }
- 
