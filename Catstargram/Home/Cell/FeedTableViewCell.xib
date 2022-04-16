@@ -155,9 +155,9 @@
             <connections>
                 <outlet property="buttonisBookMark" destination="eIO-l6-n0Y" id="YHF-Oj-q7Q"/>
                 <outlet property="buttonisHeart" destination="qYd-jw-97s" id="i2Y-uY-8Rk"/>
+                <outlet property="imageViewFeed" destination="TKi-Wc-cFl" id="miO-eo-cjX"/>
                 <outlet property="imageViewMyProfile" destination="iKd-eq-gsF" id="KT2-dz-cc6"/>
                 <outlet property="imageViewUserProfile" destination="QzE-Th-f2V" id="pan-aN-WYL"/>
-                <outlet property="imaheViewFeed" destination="TKi-Wc-cFl" id="miO-eo-cjX"/>
                 <outlet property="labelFeed" destination="c2E-xx-Q4r" id="Srh-Iu-TlJ"/>
                 <outlet property="labelHowManyLike" destination="ZD9-aJ-YfA" id="pGf-bf-85O"/>
                 <outlet property="labelUserName" destination="8rq-14-Pca" id="XbH-NI-N3p"/>

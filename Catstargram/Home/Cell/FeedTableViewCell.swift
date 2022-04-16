@@ -11,7 +11,7 @@ class FeedTableViewCell: UITableViewCell {
 
     @IBOutlet weak var labelUserName: UILabel!
     @IBOutlet weak var imageViewUserProfile: UIImageView!
-    @IBOutlet weak var imaheViewFeed: UIImageView!
+    @IBOutlet weak var imageViewFeed: UIImageView!
     @IBOutlet weak var buttonisHeart: UIButton!
     @IBOutlet weak var buttonisBookMark: UIButton!
     @IBOutlet weak var labelHowManyLike: UILabel!

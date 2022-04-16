@@ -13,6 +13,9 @@
 		CA33F509280A81EF00D04BB8 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */; };
 		CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */; };
 		CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A327FA353500EC8EFD /* RegisterViewController.swift */; };
+		CA493523280AA758007C9825 /* FeedAPIinput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA493522280AA758007C9825 /* FeedAPIinput.swift */; };
+		CA493525280AA7BA007C9825 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA493524280AA7BA007C9825 /* FeedModel.swift */; };
+		CA493527280AA7FC007C9825 /* FeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA493526280AA7FC007C9825 /* FeedDataManager.swift */; };
 		CA514A40280120E600E902F7 /* keyboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA514A3F280120E600E902F7 /* keyboardController.swift */; };
 		CA5D3B4C2807F03900576926 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D3B4B2807F03900576926 /* HomeViewController.swift */; };
 		CA5D3B512807F78900576926 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA5D3B4F2807F78900576926 /* FeedTableViewCell.swift */; };
@@ -44,6 +47,9 @@
 		CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
 		CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA4312A327FA353500EC8EFD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CA493522280AA758007C9825 /* FeedAPIinput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIinput.swift; sourceTree = "<group>"; };
+		CA493524280AA7BA007C9825 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		CA493526280AA7FC007C9825 /* FeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataManager.swift; sourceTree = "<group>"; };
 		CA514A3F280120E600E902F7 /* keyboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyboardController.swift; sourceTree = "<group>"; };
 		CA5D3B4B2807F03900576926 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CA5D3B4F2807F78900576926 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
@@ -115,9 +121,20 @@
 			path = PostCell;
 			sourceTree = "<group>";
 		};
+		CA493521280AA734007C9825 /* FeedDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				CA493522280AA758007C9825 /* FeedAPIinput.swift */,
+				CA493524280AA7BA007C9825 /* FeedModel.swift */,
+				CA493526280AA7FC007C9825 /* FeedDataManager.swift */,
+			);
+			path = FeedDataManager;
+			sourceTree = "<group>";
+		};
 		CA5D3B4A2807F02700576926 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				CA493521280AA734007C9825 /* FeedDataManager */,
 				CA5D3B4E2807F72200576926 /* Cell */,
 				CA5D3B4B2807F03900576926 /* HomeViewController.swift */,
 			);
@@ -193,7 +210,6 @@
 				6953BE20D9D7A2CBD189FE34 /* Pods-Catstargram.debug.xcconfig */,
 				5CC4FD27C40466E27E95B26A /* Pods-Catstargram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -318,16 +334,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA514A40280120E600E902F7 /* keyboardController.swift in Sources */,
+				CA493525280AA7BA007C9825 /* FeedModel.swift in Sources */,
 				CA5D3B512807F78900576926 /* FeedTableViewCell.swift in Sources */,
 				CAB6A5A728099904004F6C9D /* ProfileCollectionViewCell.swift in Sources */,
 				CA7FC72728003FC700F158E5 /* UIView+Extension.swift in Sources */,
 				CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */,
+				CA493523280AA758007C9825 /* FeedAPIinput.swift in Sources */,
 				CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */,
 				CA62EDFD27F663D40068BC77 /* ViewController.swift in Sources */,
 				CA7FC72928004D2300F158E5 /* UIViewController+Extension.swift in Sources */,
 				CA62EDF927F663D40068BC77 /* AppDelegate.swift in Sources */,
 				CA5D3B4C2807F03900576926 /* HomeViewController.swift in Sources */,
 				CA5D3B552809550300576926 /* StoryTableViewCell.swift in Sources */,
+				CA493527280AA7FC007C9825 /* FeedDataManager.swift in Sources */,
 				CA62EDFB27F663D40068BC77 /* SceneDelegate.swift in Sources */,
 				CA33F508280A81EF00D04BB8 /* PostCollectionViewCell.swift in Sources */,
 				CA7FC72D28005EB200F158E5 /* UserInfo.swift in Sources */,
