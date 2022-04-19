@@ -460,7 +460,7 @@
                             <constraint firstItem="9We-YH-J5t" firstAttribute="trailing" secondItem="ieK-Ty-2Nx" secondAttribute="trailing" id="xyW-s7-eng"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="ajp-MZ-grw"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="ajp-MZ-grw"/>
                     <connections>
                         <outlet property="tableView" destination="bqo-U6-t4M" id="hpI-pd-fX9"/>
                     </connections>
@@ -468,6 +468,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YFD-Mc-Rl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="282.60869565217394" y="1642.6339285714284"/>
+        </scene>
+        <!--릴스-->
+        <scene sceneID="bch-Qe-BB6">
+            <objects>
+                <viewController storyboardIdentifier="ReelsVC" id="eDx-bt-bdE" customClass="ReelsViewController" customModule="Catstargram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tr0-GR-uJn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ciN-40-Ocz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="47V-GO-6vB">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r1D-YR-0iy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r1D-YR-0iy" firstAttribute="bottom" secondItem="ciN-40-Ocz" secondAttribute="bottom" id="EFb-IV-POU"/>
+                            <constraint firstItem="r1D-YR-0iy" firstAttribute="trailing" secondItem="ciN-40-Ocz" secondAttribute="trailing" id="P5a-ZB-qOs"/>
+                            <constraint firstItem="ciN-40-Ocz" firstAttribute="leading" secondItem="r1D-YR-0iy" secondAttribute="leading" id="jVf-dG-wGW"/>
+                            <constraint firstItem="ciN-40-Ocz" firstAttribute="top" secondItem="r1D-YR-0iy" secondAttribute="top" id="pXM-dk-qzf"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="릴스" id="876-ZR-c0W"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ciN-40-Ocz" id="Zdq-1L-Lts"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QiE-dp-yHz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042" y="1643"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZW5-3b-DP4">
@@ -477,9 +515,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="jNv-FZ-plh" kind="relationship" relationship="viewControllers" id="nXr-BQ-DEw"/>
+                        <segue destination="eDx-bt-bdE" kind="relationship" relationship="viewControllers" id="wql-QY-1GK"/>
                         <segue destination="0Sw-7H-mvD" kind="relationship" relationship="viewControllers" id="0VA-eG-97j"/>
                     </connections>
                 </tabBarController>
@@ -509,7 +549,7 @@
         <scene sceneID="0MX-qA-zZQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Sw-7H-mvD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Proflie" id="07p-Km-8gc"/>
+                    <tabBarItem key="tabBarItem" title="Proflie" image="person.crop.circle" catalog="system" id="07p-Km-8gc"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UPf-4K-0qY">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -528,11 +568,13 @@
     <resources>
         <image name="arrow.backward" catalog="system" width="128" height="98"/>
         <image name="f.square.fill" catalog="system" width="128" height="114"/>
+        <image name="house" catalog="system" width="128" height="106"/>
         <image name="ic_catstagram_logo" width="476" height="96"/>
         <image name="ic_home_heart" width="512" height="512"/>
         <image name="ic_home_send" width="512" height="512"/>
         <image name="ic_home_upload" width="512" height="512"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
+        <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
