@@ -9,6 +9,7 @@ import UIKit
 import Alamofire
 
 
+
 class LoginViewController: UIViewController {
     
     var email = String()
@@ -53,8 +54,9 @@ class LoginViewController: UIViewController {
            let vc =
             storyboard?
                 .instantiateViewController(withIdentifier: "TabBarVC") as! UITabBarController
-            vc.modalPresentationStyle = .fullScreen
-            self.present(vc, animated: true,completion: nil)
+            self.view.window?.windowScene?.keyWindow?.rootViewController = vc
+            
+            //로그인 후 화면 호출
             
         } else {
      
@@ -91,11 +93,14 @@ class LoginViewController: UIViewController {
         let color1 = UIColor.darkGray
         let color2 = UIColor.facebookColor
         
-        let attributes = generateButtonAttribute(
-            self.registarButton,
-            texts: text1, text2,
-            fonts: font1,font2,
-            colros: color1,color2 )
+        let attributes = generateButtonAttribute(self.registarButton,
+        texts: text1, text2,
+       fonts: font1, font2 ,
+     colros: color1, color2 )
+//        self.registarButton,
+//         texts: text1, text2,
+//            fonts: font1,font2,
+//            colros: color1,color2 )
     
         self.registarButton.setAttributedTitle(attributes, for: .normal)
         

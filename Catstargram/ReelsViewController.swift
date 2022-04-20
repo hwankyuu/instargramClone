@@ -15,6 +15,7 @@ class ReelsViewController: UIViewController {
 // MARK: - Properties
     
     @IBOutlet var collectionView: UICollectionView!
+    private var nowPage = 0
     
     private let videoURLStrArr = ["pexels-beytlik-9959514", "3135074881" ]
     
@@ -35,13 +36,31 @@ class ReelsViewController: UIViewController {
     private func setupCollectionView() {
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.decelerationRate = .fast //스크롤이 빠르게 내려감
+        
         collectionView.register(UINib(nibName: "ReelsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
-        
-        
         collectionView.register(ReelsCell.self, forCellWithReuseIdentifier: ReelsCell.identifier)
+        starLoop()
         
     }
-    
+    private func starLoop() {
+        let _ = Timer.scheduledTimer(withTimeInterval: 2, repeats: true) { _ in
+            self.moveNextPage()
+        }
+    }
+    private func moveNextPage() {
+        let itemCount = collectionView.numberOfItems(inSection: 0)
+        
+        nowPage += 1
+        if (nowPage >= itemCount) {
+            // 마지막페이지
+            nowPage = 0
+        }
+        collectionView.scrollToItem(
+            at: IndexPath(item: nowPage, section: 0),
+            at: .centeredVertically,
+            animated: true)
+    }
 }
 
 
@@ -57,6 +76,13 @@ extension ReelsViewController: UICollectionViewDelegate, UICollectionViewDataSou
         for: indexPath) as? ReelsCell else { return UICollectionViewCell() }
         cell.setupURL(videoURLStrArr.randomElement()!)
     return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, didEndDisplaying cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        //메모리 관리 제어
+        if let cell = collectionView.cellForItem(at: indexPath) as? ReelsCell {
+            cell.videoView?.cleanup()
+        }
     }
 }
 

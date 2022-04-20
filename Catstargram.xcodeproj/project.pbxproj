@@ -30,7 +30,7 @@
 		CA5D3B5A2809612A00576926 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA5D3B582809612A00576926 /* StoryCollectionViewCell.xib */; };
 		CA62EDF927F663D40068BC77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDF827F663D40068BC77 /* AppDelegate.swift */; };
 		CA62EDFB27F663D40068BC77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDFA27F663D40068BC77 /* SceneDelegate.swift */; };
-		CA62EDFD27F663D40068BC77 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDFC27F663D40068BC77 /* ViewController.swift */; };
+		CA62EDFD27F663D40068BC77 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA62EDFC27F663D40068BC77 /* MainViewController.swift */; };
 		CA62EE0027F663D40068BC77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA62EDFE27F663D40068BC77 /* Main.storyboard */; };
 		CA62EE0227F663D50068BC77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA62EE0127F663D50068BC77 /* Assets.xcassets */; };
 		CA62EE0527F663D50068BC77 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA62EE0327F663D50068BC77 /* LaunchScreen.storyboard */; };
@@ -43,6 +43,7 @@
 		CA9E43F7280B2DAD00A722A9 /* FeedUploadDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9E43F6280B2DAD00A722A9 /* FeedUploadDataManager.swift */; };
 		CAB6A5A728099904004F6C9D /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */; };
 		CAB6A5A828099904004F6C9D /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */; };
+		CACF8DF828107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json in Resources */ = {isa = PBXBuildFile; fileRef = CACF8DF728107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json */; };
 		CAEFFC75280DA76A00E67CA1 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFFC74280DA76A00E67CA1 /* UserFeedModel.swift */; };
 		CAEFFC77280DAAD600E67CA1 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFFC76280DAAD600E67CA1 /* UserFeedDataManager.swift */; };
 		CAEFFC7B280DCCCE00E67CA1 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFFC7A280DCCCE00E67CA1 /* DeleteUserFeed.swift */; };
@@ -78,7 +79,7 @@
 		CA62EDF527F663D40068BC77 /* Catstargram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catstargram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA62EDF827F663D40068BC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA62EDFA27F663D40068BC77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CA62EDFC27F663D40068BC77 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CA62EDFC27F663D40068BC77 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CA62EDFF27F663D40068BC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CA62EE0127F663D50068BC77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA62EE0427F663D50068BC77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -92,6 +93,7 @@
 		CA9E43F6280B2DAD00A722A9 /* FeedUploadDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUploadDataManager.swift; sourceTree = "<group>"; };
 		CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
+		CACF8DF728107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "75229-instagram-button-flat-3d.json"; sourceTree = "<group>"; };
 		CAEFFC74280DA76A00E67CA1 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		CAEFFC76280DAAD600E67CA1 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		CAEFFC7A280DCCCE00E67CA1 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
@@ -204,8 +206,8 @@
 		CA62EDF727F663D40068BC77 /* Catstargram */ = {
 			isa = PBXGroup;
 			children = (
+				CA77F56B2810652A0001B3E2 /* ViewControllers */,
 				CAEFFC72280DA2A600E67CA1 /* UserInterface */,
-				CA62EDFC27F663D40068BC77 /* ViewController.swift */,
 				CA62EDFE27F663D40068BC77 /* Main.storyboard */,
 				CA408454280E938400318FDC /* ReelesCell.swift */,
 				CA408456280FFADB00318FDC /* VideoPlayerView.swift */,
@@ -224,6 +226,15 @@
 				CA40845B281007DC00318FDC /* pexels-beytlik-9959514.mp4 */,
 			);
 			path = Catstargram;
+			sourceTree = "<group>";
+		};
+		CA77F56B2810652A0001B3E2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CACF8DF728107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json */,
+				CA62EDFC27F663D40068BC77 /* MainViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		CA9E43F1280B26EA00A722A9 /* FeedUploadDataManager */ = {
@@ -376,6 +387,7 @@
 				CA5D3B562809550300576926 /* StoryTableViewCell.xib in Resources */,
 				CA40845C2810097800318FDC /* pexels-beytlik-9959514.mp4 in Resources */,
 				CA40845D2810097B00318FDC /* 3135074881.mp4 in Resources */,
+				CACF8DF828107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json in Resources */,
 				CA5D3B5A2809612A00576926 /* StoryCollectionViewCell.xib in Resources */,
 				CAEFFC83280DEC4200E67CA1 /* ReelsCollectionViewCell.xib in Resources */,
 				CA62EE0027F663D40068BC77 /* Main.storyboard in Resources */,
@@ -441,7 +453,7 @@
 				CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */,
 				CA493523280AA758007C9825 /* FeedAPIinput.swift in Sources */,
 				CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */,
-				CA62EDFD27F663D40068BC77 /* ViewController.swift in Sources */,
+				CA62EDFD27F663D40068BC77 /* MainViewController.swift in Sources */,
 				CA7FC72928004D2300F158E5 /* UIViewController+Extension.swift in Sources */,
 				CA62EDF927F663D40068BC77 /* AppDelegate.swift in Sources */,
 				CA408455280E938400318FDC /* ReelesCell.swift in Sources */,

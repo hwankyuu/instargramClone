@@ -51,6 +51,7 @@ class ReelsCell: UICollectionViewCell {
         cellTitleLabel.text = "릴스"
         cellTitleLabel.font = .boldSystemFont(ofSize: 25)
         cellTitleLabel.textAlignment = .left
+        cellTitleLabel.textColor = .white
         
         
         [cameraImageview, shareImageView, likeImageView, commentImageView ]
