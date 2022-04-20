@@ -7,4 +7,5 @@ target 'Catstargram' do
   # Pods for Catstargram
     pod 'Alamofire'
    pod 'Kingfisher', '~> 7.0'
+   pod 'SnapKit', '~> 5.6.0'
 end

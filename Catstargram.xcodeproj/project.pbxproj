@@ -11,6 +11,10 @@
 		CA1D99D02809895D00519A5F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D99CF2809895D00519A5F /* ProfileViewController.swift */; };
 		CA33F508280A81EF00D04BB8 /* PostCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA33F506280A81EF00D04BB8 /* PostCollectionViewCell.swift */; };
 		CA33F509280A81EF00D04BB8 /* PostCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */; };
+		CA408455280E938400318FDC /* ReelesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA408454280E938400318FDC /* ReelesCell.swift */; };
+		CA408457280FFADB00318FDC /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA408456280FFADB00318FDC /* VideoPlayerView.swift */; };
+		CA40845C2810097800318FDC /* pexels-beytlik-9959514.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CA40845B281007DC00318FDC /* pexels-beytlik-9959514.mp4 */; };
+		CA40845D2810097B00318FDC /* 3135074881.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CA40845A281007DC00318FDC /* 3135074881.mp4 */; };
 		CA4312A227FA2F2700EC8EFD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */; };
 		CA4312A427FA353500EC8EFD /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4312A327FA353500EC8EFD /* RegisterViewController.swift */; };
 		CA493523280AA758007C9825 /* FeedAPIinput.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA493522280AA758007C9825 /* FeedAPIinput.swift */; };
@@ -54,6 +58,10 @@
 		CA1D99CF2809895D00519A5F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CA33F506280A81EF00D04BB8 /* PostCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionViewCell.swift; sourceTree = "<group>"; };
 		CA33F507280A81EF00D04BB8 /* PostCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCollectionViewCell.xib; sourceTree = "<group>"; };
+		CA408454280E938400318FDC /* ReelesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelesCell.swift; sourceTree = "<group>"; };
+		CA408456280FFADB00318FDC /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
+		CA40845A281007DC00318FDC /* 3135074881.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = 3135074881.mp4; sourceTree = "<group>"; };
+		CA40845B281007DC00318FDC /* pexels-beytlik-9959514.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-beytlik-9959514.mp4"; sourceTree = "<group>"; };
 		CA4312A127FA2F2700EC8EFD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA4312A327FA353500EC8EFD /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CA493522280AA758007C9825 /* FeedAPIinput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedAPIinput.swift; sourceTree = "<group>"; };
@@ -199,6 +207,8 @@
 				CAEFFC72280DA2A600E67CA1 /* UserInterface */,
 				CA62EDFC27F663D40068BC77 /* ViewController.swift */,
 				CA62EDFE27F663D40068BC77 /* Main.storyboard */,
+				CA408454280E938400318FDC /* ReelesCell.swift */,
+				CA408456280FFADB00318FDC /* VideoPlayerView.swift */,
 				CAEFFC7E280DEB5100E67CA1 /* ReelsViewController.swift */,
 				CAEFFC80280DEC4200E67CA1 /* ReelsCollectionViewCell.swift */,
 				CAEFFC81280DEC4200E67CA1 /* ReelsCollectionViewCell.xib */,
@@ -210,6 +220,8 @@
 				CA62EE0127F663D50068BC77 /* Assets.xcassets */,
 				CA62EE0627F663D50068BC77 /* Info.plist */,
 				CA7FC72C28005EB200F158E5 /* UserInfo.swift */,
+				CA40845A281007DC00318FDC /* 3135074881.mp4 */,
+				CA40845B281007DC00318FDC /* pexels-beytlik-9959514.mp4 */,
 			);
 			path = Catstargram;
 			sourceTree = "<group>";
@@ -362,6 +374,8 @@
 				CA62EE0227F663D50068BC77 /* Assets.xcassets in Resources */,
 				CAB6A5A828099904004F6C9D /* ProfileCollectionViewCell.xib in Resources */,
 				CA5D3B562809550300576926 /* StoryTableViewCell.xib in Resources */,
+				CA40845C2810097800318FDC /* pexels-beytlik-9959514.mp4 in Resources */,
+				CA40845D2810097B00318FDC /* 3135074881.mp4 in Resources */,
 				CA5D3B5A2809612A00576926 /* StoryCollectionViewCell.xib in Resources */,
 				CAEFFC83280DEC4200E67CA1 /* ReelsCollectionViewCell.xib in Resources */,
 				CA62EE0027F663D40068BC77 /* Main.storyboard in Resources */,
@@ -430,6 +444,7 @@
 				CA62EDFD27F663D40068BC77 /* ViewController.swift in Sources */,
 				CA7FC72928004D2300F158E5 /* UIViewController+Extension.swift in Sources */,
 				CA62EDF927F663D40068BC77 /* AppDelegate.swift in Sources */,
+				CA408455280E938400318FDC /* ReelesCell.swift in Sources */,
 				CA5D3B4C2807F03900576926 /* HomeViewController.swift in Sources */,
 				CAEFFC82280DEC4200E67CA1 /* ReelsCollectionViewCell.swift in Sources */,
 				CA5D3B552809550300576926 /* StoryTableViewCell.swift in Sources */,
@@ -445,6 +460,7 @@
 				CAEFFC77280DAAD600E67CA1 /* UserFeedDataManager.swift in Sources */,
 				CA5D3B592809612A00576926 /* StoryCollectionViewCell.swift in Sources */,
 				CA7FC72B280053E300F158E5 /* Color+Extension.swift in Sources */,
+				CA408457280FFADB00318FDC /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

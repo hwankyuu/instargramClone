@@ -7,18 +7,21 @@
 
 import UIKit
 
+
 class ReelsViewController: UIViewController {
  
+    
     
 // MARK: - Properties
     
     @IBOutlet var collectionView: UICollectionView!
     
+    private let videoURLStrArr = ["pexels-beytlik-9959514", "3135074881" ]
     
 // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupCollectionView()
         // Do any additional setup after loading the view.
     }
      
@@ -35,6 +38,8 @@ class ReelsViewController: UIViewController {
         collectionView.register(UINib(nibName: "ReelsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: ReelsCollectionViewCell.identifier)
         
         
+        collectionView.register(ReelsCell.self, forCellWithReuseIdentifier: ReelsCell.identifier)
+        
     }
     
 }
@@ -48,17 +53,25 @@ extension ReelsViewController: UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-      guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCollectionViewCell.identifier,
-        for: indexPath) as? ReelsCollectionViewCell else { fatalError() }
-        
-        return cell
+      guard  let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ReelsCell.identifier,
+        for: indexPath) as? ReelsCell else { return UICollectionViewCell() }
+        cell.setupURL(videoURLStrArr.randomElement()!)
+    return cell
     }
-    
-    
 }
 
-// MARK: -  UICollectionViewFlowLayout
+// MARK: -  UICollectionViewDelegateFlowLayout
 
 extension ReelsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout:
+     UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(
+            width: collectionView.frame.width,
+            height: collectionView.frame.height)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        1
+    }
 }
+
