@@ -114,6 +114,10 @@ class RegisterViewController: UIViewController {
         self.userInfo?(userInfo)
     }
     
+ 
+    @IBAction func loginButtonDidtap(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     
     
