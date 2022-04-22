@@ -44,6 +44,7 @@
 		CAB6A5A728099904004F6C9D /* ProfileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */; };
 		CAB6A5A828099904004F6C9D /* ProfileCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */; };
 		CACF8DF828107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json in Resources */ = {isa = PBXBuildFile; fileRef = CACF8DF728107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json */; };
+		CACF8DFA281092CC00C8DBC8 /* 99B6AB485D09F2132A.png in Resources */ = {isa = PBXBuildFile; fileRef = CACF8DF9281092CC00C8DBC8 /* 99B6AB485D09F2132A.png */; };
 		CAEFFC75280DA76A00E67CA1 /* UserFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFFC74280DA76A00E67CA1 /* UserFeedModel.swift */; };
 		CAEFFC77280DAAD600E67CA1 /* UserFeedDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFFC76280DAAD600E67CA1 /* UserFeedDataManager.swift */; };
 		CAEFFC7B280DCCCE00E67CA1 /* DeleteUserFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAEFFC7A280DCCCE00E67CA1 /* DeleteUserFeed.swift */; };
@@ -94,6 +95,7 @@
 		CAB6A5A528099904004F6C9D /* ProfileCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionViewCell.swift; sourceTree = "<group>"; };
 		CAB6A5A628099904004F6C9D /* ProfileCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileCollectionViewCell.xib; sourceTree = "<group>"; };
 		CACF8DF728107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "75229-instagram-button-flat-3d.json"; sourceTree = "<group>"; };
+		CACF8DF9281092CC00C8DBC8 /* 99B6AB485D09F2132A.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 99B6AB485D09F2132A.png; sourceTree = "<group>"; };
 		CAEFFC74280DA76A00E67CA1 /* UserFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedModel.swift; sourceTree = "<group>"; };
 		CAEFFC76280DAAD600E67CA1 /* UserFeedDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFeedDataManager.swift; sourceTree = "<group>"; };
 		CAEFFC7A280DCCCE00E67CA1 /* DeleteUserFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserFeed.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 		CA77F56B2810652A0001B3E2 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				CACF8DF9281092CC00C8DBC8 /* 99B6AB485D09F2132A.png */,
 				CACF8DF728107AD900C8DBC8 /* 75229-instagram-button-flat-3d.json */,
 				CA62EDFC27F663D40068BC77 /* MainViewController.swift */,
 			);
@@ -379,6 +382,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACF8DFA281092CC00C8DBC8 /* 99B6AB485D09F2132A.png in Resources */,
 				CA33F509280A81EF00D04BB8 /* PostCollectionViewCell.xib in Resources */,
 				CA62EE0527F663D50068BC77 /* LaunchScreen.storyboard in Resources */,
 				CA5D3B522807F78900576926 /* FeedTableViewCell.xib in Resources */,

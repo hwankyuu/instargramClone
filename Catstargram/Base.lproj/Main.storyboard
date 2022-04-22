@@ -530,23 +530,12 @@
         <!--View Controller-->
         <scene sceneID="Oow-u5-0C5">
             <objects>
-                <viewController id="QJY-DQ-B78" customClass="ViewController" customModule="Catstargram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewControllerVC" id="QJY-DQ-B78" customClass="ViewController" customModule="Catstargram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nog-jy-443">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bpe-rf-kyv">
-                                <rect key="frame" x="195" y="441" width="24" height="14"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain"/>
-                            </button>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="st0-2R-3nX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="bpe-rf-kyv" firstAttribute="centerX" secondItem="nog-jy-443" secondAttribute="centerX" id="WAG-p0-Phn"/>
-                            <constraint firstItem="bpe-rf-kyv" firstAttribute="centerY" secondItem="nog-jy-443" secondAttribute="centerY" id="h3a-jE-SDf"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="view" destination="nog-jy-443" id="Ey1-gc-YbV"/>
@@ -559,7 +548,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Xg7-J6-EEv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Eoz-vM-3x0" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NaviConVC" automaticallyAdjustsScrollViewInsets="NO" id="Eoz-vM-3x0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="qWR-eE-DO7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="OlB-8e-aHZ">

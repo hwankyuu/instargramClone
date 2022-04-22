@@ -8,6 +8,7 @@
 import UIKit
 import Lottie
 
+
 class ViewController: UIViewController {
      
     var titleLabel: UILabel = {
@@ -40,6 +41,7 @@ class ViewController: UIViewController {
         view.backgroundColor = .black
         view.addSubview(animationView)
         animationView.center = view.center
+
         
         
         
@@ -57,17 +59,40 @@ class ViewController: UIViewController {
             self.titleLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
             self.titleLabel.centerYAnchor.constraint(equalTo: self.view.centerYAnchor).isActive = true
            
-            guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") else {
-                return
-            }
+//
+//            guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController else { return }
+//            uvc.modalPresentationStyle = .fullScreen
+//            self.present(uvc, animated: true)
+            
+            let loginboard = UIStoryboard(name: "Main", bundle: nil)
+            
+             let uvc = self.storyboard?.instantiateViewController(withIdentifier: "NaviConVC")
+            as! UINavigationController
+            
             uvc.modalPresentationStyle = .fullScreen
             
-            self.present(uvc, animated: true)
+       self.present(uvc, animated: true, completion: nil)
+
             
             
+            
+            
+            
+    
+//            let uvc = self.navigationController.present(modalPresentationStyle)
+//            uvc.modalPresentationStyle = .fullScreen
+//          self.present(uvc, animated: true)
+//
             
             
         
         }
     }
 }
+//        guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") else { return }
+//        
+//        uvc.modalPresentationStyle = .fullScreen
+//        
+//        self.present(uvc, animated: true)
+//    }
+//}
