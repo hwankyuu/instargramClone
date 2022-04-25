@@ -73,7 +73,10 @@ class ViewController: UIViewController {
             
        self.present(uvc, animated: true, completion: nil)
 
-            
+            }
+        }
+    }
+
             
             
             
@@ -85,10 +88,7 @@ class ViewController: UIViewController {
 //
             
             
-        
-        }
-    }
-}
+
 //        guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") else { return }
 //        
 //        uvc.modalPresentationStyle = .fullScreen
